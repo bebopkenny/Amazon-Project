@@ -1,3 +1,13 @@
+export function getProduct(productId) {
+  let matchingProduct; // variable for when the two items match
+  products.forEach((product) => { // loop through products map
+      if (product.id === productId) { // check if the products.id map from products.js is the same as the cart.productId
+          matchingProduct = product; // when it finds the two match Ids it will equal it to the matchingProduct variable 
+      }
+  });
+  return matchingProduct;
+}
+
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
