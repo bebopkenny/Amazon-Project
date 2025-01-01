@@ -3,6 +3,7 @@ import { products, getProduct } from '../../data/products.js';
 import { formatCurrency } from '../utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js'; // dayjs library
 import { deliveryOptions, getDeliveryOption } from '../../data/deliveryOptions.js';
+import { renderPaymentSummary } from './paymentSummary.js';
 // const today = dayjs();
 // const deliveryDate = today.add(7, 'days'); // 1st number of days 2nd is length of time
 // deliveryDate.format('dddd, MMMM D');
@@ -115,6 +116,7 @@ export function renderOrderSummary() {
 
             const container = document.querySelector(`.js-cart-item-container-${productId}`);
             container.remove();
+            renderPaymentSummary(); // also works when the user deletes it from teh quantity cart; it will update the orderSummary to the correct ammount
         });
     });
 
@@ -123,6 +125,7 @@ export function renderOrderSummary() {
             const { productId, deliveryOptionId } = element.dataset;
             updateDeliveryOption(productId, deliveryOptionId);
             renderOrderSummary();
+            renderPaymentSummary(); // If the user changes the delivery option it will automatically change the orderSummary total as well
         });
     });
 }
