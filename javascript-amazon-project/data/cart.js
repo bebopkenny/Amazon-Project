@@ -53,3 +53,15 @@ export function removeFromCart(productId) {
     cart = newCart;
     saveToStorage(); // whenever we update the cart it will be saved onto local storage
 }
+
+export function updateDeliveryOption(productId, deliveryOptionId) {
+    let matchingItem;
+
+    cart.forEach((cartItem) => { // the keys for cart map is going to be named cartItem
+        if (productId === cartItem.productId) { // if the product name matches 
+            matchingItem = cartItem;
+        }
+    });
+    matchingItem.deliveryOptionId = deliveryOptionId;
+    saveToStorage();
+}
