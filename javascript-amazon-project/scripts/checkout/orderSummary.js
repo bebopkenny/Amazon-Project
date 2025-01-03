@@ -47,7 +47,7 @@ export function renderOrderSummary() {
                     ${matchingProduct.name}
                 </div>
                 <div class="product-price">
-                    $${formatCurrency(matchingProduct.priceCents)}
+                    ${matchingProduct.getPrice()}
                 </div>
                 <div class="product-quantity
                     js-product-quantity-${matchingProduct.id}">
@@ -119,7 +119,7 @@ export function renderOrderSummary() {
 
             const container = document.querySelector(`.js-cart-item-container-${productId}`);
             container.remove();
-            
+
             renderPaymentSummary(); // also works when the user deletes it from teh quantity cart; it will update the orderSummary to the correct ammount
         });
     });

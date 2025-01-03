@@ -1,14 +1,14 @@
 class Cart {
     cartItems;
-    localStorageKey;
+    #localStorageKey;
 
     constructor(localStorageKey) {
-        this.localStorageKey = localStorageKey;
-        this.loadFromStorage();
+        this.#localStorageKey = localStorageKey;
+        this.#loadFromStorage();
     }
 
-    loadFromStorage() {
-        this.cartItems = JSON.parse(localStorage.getItem(this.localStorageKey)); // this always gives the outer object name
+    #loadFromStorage() {
+        this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey)); // this always gives the outer object name
         
         if (!this.cartItems) { // If the cart is empty/null then we will give it a default cart
             this.cartItems = [{
@@ -24,7 +24,7 @@ class Cart {
     }
 
     saveToStorage() {
-        localStorage.setItem(this.localStorageKey, JSON.stringify(this.cartItems)); // 1st param is the name we want to save 2nd param is the 'thing' in this case the cart map that we want to save in but we need to convert it to a JSON.stringify file first
+        localStorage.setItem(this.#localStorageKey, JSON.stringify(this.cartItems)); // 1st param is the name we want to save 2nd param is the 'thing' in this case the cart map that we want to save in but we need to convert it to a JSON.stringify file first
     }
     addToCart(productId) {// productId from the dataset variable
         let matchingItem;
