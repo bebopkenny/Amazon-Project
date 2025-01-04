@@ -1,10 +1,57 @@
 import { renderOrderSummary } from "./checkout/orderSummary.js";
 import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 import { loadProducts } from "../data/products.js";
+import { loadCart } from '../data/cart.js';
 // import '../data/cart-class.js';
 // import '../data/backend-practice.js';
 
-loadProducts(() => {
+Promise.all([
+    new Promise((resolve) => { // it will run right away // console.log('start promise')
+        loadProducts(() => { // console.log('finished loading')
+            resolve('value1'); // call resolve to go on the next step
+        });
+    }),
+    new Promise((resolve) => {
+        loadCart(() => {
+            resolve();
+        });
+    })
+
+]).then((values) => {
+    console.log(values);
     renderOrderSummary();
     renderPaymentSummary();
 });
+
+// resolve is a function
+// - similar to done() function
+// - lets us control when to go to the next step
+
+/*
+new Promise((resolve) => { // it will run right away // console.log('start promise')
+    loadProducts(() => { // console.log('finished loading')
+        resolve('value1'); // call resolve to go on the next step
+    });
+
+}).then((value) => { // resolve makes it to the next step // console.log('next step')
+    console.log(value);
+    
+    return new Promise((resolve) => {
+        loadCart(() => {
+            resolve();
+        });
+    });
+
+}).then(() => {
+    renderOrderSummary();
+    renderPaymentSummary(); 
+});
+*/
+
+/*
+loadProducts(() => {
+    loadCart(() => {
+
+    });
+});
+*/
