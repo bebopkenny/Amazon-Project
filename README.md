@@ -87,13 +87,20 @@ This project aims to provide users with a seamless shopping experience, similar 
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](path/to/your/homepage-screenshot.png)
+![image](https://github.com/user-attachments/assets/ab78cb16-7265-429c-bea4-1afeff70dcca)
 
 ### Checkout Page
-![Checkout Page](path/to/your/checkout-screenshot.png)
+![image](https://github.com/user-attachments/assets/cb95091b-0eb6-487a-80b9-9aa7e39c2baa)
+
+### Order Page
+![image](https://github.com/user-attachments/assets/929b88b6-dc64-4797-8b9d-dd38cde21998)
 
 ### Order Tracking
-![Order Tracking](path/to/your/order-tracking-screenshot.png)
+![image](https://github.com/user-attachments/assets/6a676ca6-a71f-4331-a379-813df0be4610)
+
+### Testing Page
+![image](https://github.com/user-attachments/assets/48149c3d-b25a-46f6-b345-7545f5d7929d)
+
 
 ---
 
