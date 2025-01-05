@@ -5,7 +5,7 @@ Welcome to the **Amazon Clone Project**! This project is a feature-rich e-commer
 ---
 
 ### 🔗 Live Demo
-You can view the live demo of this project here: [https://projects.kennygarcia.net/amazon-clone](https://projects.kennygarcia.net/amazon-clone)
+You can view the live demo of this project here: [https://amazon.kennygarcia.net](https://amazon.kennygarcia.net)
 
 ---
 
