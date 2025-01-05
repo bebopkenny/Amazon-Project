@@ -5,6 +5,24 @@ import { loadCart } from '../data/cart.js';
 // import '../data/cart-class.js';
 // import '../data/backend-practice.js';
 
+async function loadPage() { // async = makes a function return a promise
+
+    await loadProductsFetch(); // await lets us write asynchronous code like normal code
+
+    const value = await new Promise((resolve) => {
+        loadCart(() => {
+            resolve('value3');
+        });
+    });
+
+    renderOrderSummary();
+    renderPaymentSummary();
+
+}
+
+loadPage();
+
+/*
 Promise.all([
     loadProductsFetch(),
     new Promise((resolve) => {
@@ -18,6 +36,7 @@ Promise.all([
     renderOrderSummary();
     renderPaymentSummary();
 });
+*/
 
 // resolve is a function
 // - similar to done() function
