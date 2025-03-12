@@ -4,12 +4,12 @@ Welcome to the **Amazon Clone Project**! This project is a feature-rich e-commer
 
 ---
 
-### 🔗 Live Demo
+### Live Demo
 You can view the live demo of this project here: [https://amazon.kennygarcia.net](https://amazon.kennygarcia.net)
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -21,7 +21,7 @@ You can view the live demo of this project here: [https://amazon.kennygarcia.net
 
 ---
 
-## 🌟 Overview
+## Overview
 
 The Amazon Clone Project replicates the core functionalities of an e-commerce website, including product listings, a dynamic shopping cart, a checkout page with order summary and shipping options, and order tracking. The project also includes **backend integrations** using **fetch requests** and **localStorage** for data persistence.
 
@@ -29,36 +29,36 @@ This project aims to provide users with a seamless shopping experience, similar 
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🛒 Shopping Cart
+### Shopping Cart
 - Add products to the cart.
 - Update product quantities.
 - Remove products from the cart.
 - Calculate total prices with tax and shipping.
 
-### 📦 Checkout Page
+### Checkout Page
 - Dynamic order summary.
 - Choose from multiple shipping options (free, standard, express).
 - Calculate estimated delivery dates using **Day.js**.
 
-### 📋 Order Tracking
+### Order Tracking
 - Displays detailed order summaries.
 - Track the delivery status (Preparing, Shipped, Delivered).
 
-### 🧪 Unit Testing with Jasmine
+### Unit Testing with Jasmine
 - Includes test cases for key functionalities:
   - **formatCurrency**: Converts cents to dollars and rounds to the nearest cent.
   - **addToCart**: Adds new products to the cart or updates existing ones.
   - **renderOrderSummary**: Dynamically displays the cart and handles product removals.
 
-### 🔧 Backend Integration
+### Backend Integration
 - Uses **fetch requests** to load product data and submit orders.
 - Stores cart and order data in **localStorage** for persistent state management.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **HTML5**: For structuring the content.
 - **CSS3**: For styling and responsive design.
@@ -70,7 +70,7 @@ This project aims to provide users with a seamless shopping experience, similar 
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -84,7 +84,7 @@ This project aims to provide users with a seamless shopping experience, similar 
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Home Page
 ![image](https://github.com/user-attachments/assets/ab78cb16-7265-429c-bea4-1afeff70dcca)
@@ -104,7 +104,7 @@ This project aims to provide users with a seamless shopping experience, similar 
 
 ---
 
-## 🧪 Testing
+## Testing
 
 This project uses **Jasmine** for unit testing. The following test suites are included:
 
@@ -127,7 +127,7 @@ To run the tests:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Add user authentication (login/logout functionality).
 - Implement a backend server with a database to store product and order data.
@@ -136,19 +136,19 @@ To run the tests:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---
 
-## 📧 Contact
+## Contact
 
 For any inquiries or feedback, please reach out:
 
@@ -159,10 +159,10 @@ For any inquiries or feedback, please reach out:
 
 ---
 
-### 📚 Acknowledgments
+### Acknowledgments
 
 - The **Jasmine framework** for testing.
 - **Day.js** for date handling.
 - **Hostinger** for hosting services.
 
-Thank you for checking out my project! 😊
+Thank you for checking out my project!
